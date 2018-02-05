@@ -49,7 +49,7 @@
     (as-> (compile-node node) %
           (case (:exit %)
             0 (println (:out %))
-            1 (println (:err %))))))
+            (println (:err %))))))
 
 
 (defn- clean
